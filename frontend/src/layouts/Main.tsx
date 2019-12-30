@@ -7,7 +7,7 @@ import { theme } from "./../theme";
 import { APP_TITLE } from "../constants";
 
 const MainLayout: React.SFC = (props: any) => {
-  const [showSidebar, setShowSidebar] = useState(false);
+  const [ showSidebar, setShowSidebar ] = useState(true);
   const { children } = props;
 
   return (

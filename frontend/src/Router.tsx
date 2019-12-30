@@ -1,30 +1,16 @@
 import React from "react";
-import { APP_TITLE } from "./constants";
-
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
 import Recommendations from "./components/Recommendations/Recommendations";
 
-const App: React.FC = () => {
+const RouterOutput: React.FC = () => {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/detail">Detail</Link>
-            </li>
-            <li>
-              <Link to="/">Recommendations</Link>
-            </li>
-          </ul>
-        </nav>
-
+    // <Router>
+    <>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
@@ -35,9 +21,9 @@ const App: React.FC = () => {
             <Recommendations />
           </Route>
         </Switch>
-      </div>
-    </Router>
+        </>
+    // </Router>
   )
 };
 
-export default App;
+export default RouterOutput;

@@ -2,6 +2,22 @@ import { Box, Button, Collapsible, Layer, ResponsiveContext } from "grommet";
 import { FormClose } from "grommet-icons";
 import React from "react";
 import { ISidebarProps } from "../types/SidebarTypes";
+import { Link } from "react-router-dom";
+
+const SidebarLinks = () => {
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Recommendations</Link>
+        </li>
+        <li>
+          <Link to="/detail">Movie detail</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 const Sidebar: React.SFC<ISidebarProps> = props => {
   const { showSidebar, setShowSidebar } = props;
@@ -19,7 +35,7 @@ const Sidebar: React.SFC<ISidebarProps> = props => {
                 align="center"
                 justify="center"
               >
-                sidebar
+                <SidebarLinks />
               </Box>
             </Collapsible>
           ) : (

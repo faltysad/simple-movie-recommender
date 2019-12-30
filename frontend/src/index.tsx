@@ -3,11 +3,15 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import MainLayout from "./layouts/Main";
+import RouterOutput from "./Router";
+import {   BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  <MainLayout>
-    <App />
-  </MainLayout>,
+  <Router>
+    <MainLayout>
+      <RouterOutput />
+    </MainLayout>
+  </Router>,
   document.getElementById("root")
 );
 
