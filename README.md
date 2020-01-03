@@ -2,7 +2,7 @@
 ![simple-movie-recommender demo](simple-movie-recommender.gif)
 
 ## 🙋‍♂️Overview
-This is a reference implementation of Microsoft's Matchbox Recommender provided with ready-to-use Azure Machine Learning Studio experiment. This Recommender is then deployed as Azure Machine Learning Studio web service and requested via Azure Api Management. Simple web application written in React, which requests mentioned recommender is also included.
+This is a reference implementation of Microsoft's Matchbox Recommender provided with ready-to-use Azure Machine Learning Studio experiment. This Recommender is then deployed as Azure Machine Learning Studio web service and requested via Azure Api Management. Simple web application written in React, which requests mentioned recommender, is also included.
 
 ## 👨‍🔧 How to setup
 1. Open [this experiment](https://gallery.cortanaintelligence.com/Experiment/Simple-Movie-Recommender-Pre-trained-1M-MovieLens) in Azure Machine Learning Studio
