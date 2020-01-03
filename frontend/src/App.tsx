@@ -1,14 +1,8 @@
 import React from "react";
-import { APP_TITLE } from "./constants";
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
 import Recommendations from "./components/Recommendations/Recommendations";
+
 
 const App: React.FC = () => {
   return (
