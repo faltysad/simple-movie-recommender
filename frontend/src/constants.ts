@@ -1,1 +1,1 @@
-export const APP_TITLE = "Movie recommender";
+export const APP_TITLE = "Simple Movie Recommender";

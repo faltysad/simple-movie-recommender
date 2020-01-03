@@ -17,6 +17,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "downlevelIteration": true, // This adds boilerplate to transpiled codebase, but allows us to use iterables on arrays
     "jsx": "react"
   },
   "include": [
